@@ -1,0 +1,51 @@
+//
+//  pchFile.pch
+//  framework
+//
+//  Created by mac on 15-8-12.
+//  Copyright (c) 2015年 ZXD. All rights reserved.
+//
+
+#ifndef framework_pchFile_pch
+#define framework_pchFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+//自定义接口 参数
+#import "Config.h"
+
+//数据请求
+#import"AFNetworking.h"
+#import "NetRequestClass.h"
+
+//界面刷新特效
+#import "KVNProgress.h"
+
+//图片缓存
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
+
+//自定义工具类
+#import "ZCControl.h"//创建UI
+#import "Validate.h"//验证
+#import "Include.h"//公用方法
+
+//注册单列
+#import "RegisterManager.h"
+
+//Base64加密
+#import "Base64.h"
+
+//自定义MyUILabel
+#import "MyUILabel.h"
+
+#endif
+
+#endif
+
